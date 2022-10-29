@@ -1,0 +1,34 @@
+create table class(id int,name varchar(20));
+insert into class values(1,'Ash');
+insert into class values(2,'Brock');
+insert into class values(3,'Gingka');
+commit
+insert into class values(4,'Kenta');
+savepoint A;
+update class set id=5 where name='Kenta';
+savepoint B;
+insert into class values(6,'Goku');
+savepoint c;
+Rollback to B
+
+#### OUTPUT of this code will be : 
+
+## Before rollback
+
+___OUTPUT___
+ID   NAME
+1    Ash
+2    Brock
+3    Gingka
+5    Kenta
+6    Goku
+
+
+## After rollback
+ 
+___OUTPUT___
+ID   NAME
+1    Ash
+2    Brock
+3    Gingka
+5    Kenta
