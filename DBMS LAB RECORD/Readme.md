@@ -1,2 +1,2 @@
-# THIS IS THE DATASTRUCUTRES LAB RECORD OF
-## [Devika S G](https://github.com/dsg1320)
+# THIS IS THE DATABASE LAB RECORD UPLOADED BY
+## [Chrislin Molly Varghese](https://github.com/Chrislin-Molly)
